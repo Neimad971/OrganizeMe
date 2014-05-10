@@ -1,5 +1,7 @@
 package com.talsoft.organizeme.android;
 
+import com.talsoft.organizeme_android_client.R;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
