@@ -28,7 +28,6 @@
 		    <version>4.1.1.4</version>
 		    <scope>provided</scope>
 		</dependency>
-            
 	</dependencies>
 	        
             
@@ -37,6 +36,8 @@
 	<build>
     <sourceDirectory>src</sourceDirectory>
     <finalName>${project.artifactId}</finalName>
+    
+    
     <pluginManagement>
       <plugins>
         <plugin>
@@ -45,9 +46,43 @@
           <version>3.8.2</version>
           <extensions>true</extensions>      
         </plugin>
+        
+        <plugin>
+        <groupId>org.eclipse.m2e</groupId>
+        <artifactId>lifecycle-mapping</artifactId>
+        <version>1.0.0</version>
+        <configuration>
+                <lifecycleMappingMetadata>
+                        <pluginExecutions>
+                                <pluginExecution>
+                                        <pluginExecutionFilter>
+                                                <groupId>
+                                                        com.jayway.maven.plugins.android.generation2
+                                                </groupId>
+                                                <artifactId>
+                                                        android-maven-plugin
+                                                </artifactId>
+                                                <versionRange>[3.8.2,)</versionRange>
+                                                <goals>
+                                                        <goal>proguard</goal>
+                                                        <goal>generate-sources</goal>
+                                                        <goal>consume-aar</goal>
+                                                </goals>
+                                        </pluginExecutionFilter>
+                                        <action>
+                                                <ignore></ignore>
+                                        </action>
+                                </pluginExecution>
+                        </pluginExecutions>
+                </lifecycleMappingMetadata>
+        </configuration>
+      </plugin>
+        
+        
       </plugins>
     </pluginManagement>
-    <plugins>
+        
+     <plugins>
       <plugin>
         <groupId>com.jayway.maven.plugins.android.generation2</groupId>
         <artifactId>android-maven-plugin</artifactId>
@@ -57,12 +92,39 @@
             <platform>16</platform>
           </sdk>
         </configuration>
-      </plugin>   
+      </plugin> 
+      
+      
+      <!-- plugin>
+        <groupId>org.eclipse.m2e</groupId>
+        <artifactId>lifecycle-mapping</artifactId>
+        <version>1.0.0</version>
+        <configuration>
+                <lifecycleMappingMetadata>
+                        <pluginExecutions>
+                                <pluginExecution>
+                                        <pluginExecutionFilter>
+                                                <groupId>
+                                                        com.jayway.maven.plugins.android.generation2
+                                                </groupId>
+                                                <artifactId>
+                                                        android-maven-plugin
+                                                </artifactId>
+                                                <versionRange>[3.8.2,)</versionRange>
+                                                <goals>
+                                                        <goal>proguard</goal>
+                                                        <goal>generate-sources</goal>
+                                                        <goal>consume-aar</goal>
+                                                </goals>
+                                        </pluginExecutionFilter>
+                                        <action>
+                                                <ignore></ignore>
+                                        </action>
+                                </pluginExecution>
+                        </pluginExecutions>
+                </lifecycleMappingMetadata>
+        </configuration>
+      </plugin-->      
     </plugins>
   </build>
-            
-	
-
-	
-
 </project>
