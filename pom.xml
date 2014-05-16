@@ -8,7 +8,7 @@
 	
 		
 	<groupId>com.talsoft.organizeme</groupId>
-	<artifactId>organizeMe-parent</artifactId>
+	<artifactId>organizeme-parent</artifactId>
 	<version>0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	
@@ -19,7 +19,7 @@
 
 	
 	<modules>
-		<module>OrganizeMe-api</module>
-		<module>OrganizeMe-Android-client</module>
+		<module>organizeme-api</module>
+		<module>organizeme-android-client</module>
 	</modules>
 </project>

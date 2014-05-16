@@ -8,14 +8,13 @@
 	
 	<parent>
 		<groupId>com.talsoft.organizeme</groupId>
-		<artifactId>organizeMe-parent</artifactId>
+		<artifactId>organizeme-parent</artifactId>
 		<version>0.1-SNAPSHOT</version>
 	</parent>
 	
 		
-	<groupId>com.talsoft.organizeme.android</groupId>
-	<artifactId>organizeMe-android-client</artifactId>
-	<version>0.1-SNAPSHOT</version>
+	
+	<artifactId>organizeme-android-client</artifactId>
 	<packaging>apk</packaging>
 	
 	<!-- project name -->
