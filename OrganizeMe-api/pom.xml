@@ -18,13 +18,13 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
-	<modules>
+	<!-- <modules>
 		<module>organizeme-core</module>
 		<module>oragnizeme-web</module>
 	</modules>
 
 	<profiles>
-		<!-- PROFIL POUR BUILD COMPLET DE L'API, AVEC MOTEUR IHM -->
+		PROFIL POUR BUILD COMPLET DE L'API, AVEC MOTEUR IHM
 		<profile>
 			<id>complete</id>
 			<modules>
@@ -35,7 +35,7 @@
 				<activeByDefault>true</activeByDefault>
 			</activation>
 		</profile>
-	</profiles>
+	</profiles> -->
 
 	<!-- libelle du projet -->
 	<name>Organize me - API</name>
